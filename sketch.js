@@ -101,7 +101,7 @@ function keyPressed(){
 }
 
 async function timeBackground(){
-    var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
+    var response = await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata");
     var rJSON = await response.json();
     var dt = rJSON.datetime;
     var hr = dt.slice(11,13);
